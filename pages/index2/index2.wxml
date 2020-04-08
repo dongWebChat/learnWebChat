@@ -1,0 +1,9 @@
+<view class="indexContainer">
+    东东很帅
+<!--    <view>-->
+<!--        <text bindtap="setTitle">{{title}}</text>-->
+<!--    </view>-->
+        <view bindtap="setTitle">
+            <text>{{title}}</text>
+        </view>
+</view>
