@@ -33,6 +33,9 @@ App({
       }
     })
   },
+  onShow() {
+    // console.log('currentPage', this.getCurrentPage())
+  },
   globalData: {
     userInfo: null
   }

@@ -1,6 +1,7 @@
 /**
  * Created by dong on 2020/4/5.
  */
+const app = getApp()
 Page({
   data: {
     title: "东东好帅啊",
@@ -10,10 +11,15 @@ Page({
       { name: '产品3' },
       { name: '产品4' },
       { name: '产品5 ' },
-    ]
+    ],
+    text: '东东'
   },
   onLoad: function () {
     console.log("东东好帅load")
+    console.log('跳转回调', this.getOpenerEventChannel())
+    console.log('页面栈', app.getCurrentPage)
+    console.log('页面路径', this.route)
+    console.log('env', wx.env)
   },
   onLaunch: function () {
     console.log("东东好帅load")
@@ -30,5 +36,11 @@ Page({
   setTitle: function () {
     console.log('设置title')
     // console.log('getCurrentPage', App.getCurrentPage())
+  },
+  bindInput (e) {
+    console.log("bindInput", e)
+    this.setData({
+      text: e.detail.value
+    })
   }
 })

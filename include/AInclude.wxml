@@ -1,0 +1,3 @@
+<view>IncludeA</view>
+<include src="./BInclude.wxml"></include>
+<template name="include">Include</template>

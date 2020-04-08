@@ -1,0 +1,8 @@
+<view>template view</view>
+<template name="a">
+    template a
+</template>
+<!--<template name="b">-->
+<!--    template b-->
+<!--</template>-->
+<import src="./template2.wxml"></import>

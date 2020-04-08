@@ -1,0 +1,2 @@
+<view>IncludeB</view>
+<template name="include">Include</template>
