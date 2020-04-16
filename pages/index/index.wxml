@@ -9,6 +9,7 @@
     </block>
   </view>
   <text bindtap="bindViewIndex">跳转index2</text>
+  <navigator url="./../index2/index2" open-type="navigate">跳转</navigator>
   <navigator url="../item/item">跳转item</navigator>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>

@@ -3,7 +3,29 @@
 <!--    <view>-->
 <!--        <text bindtap="setTitle">{{title}}</text>-->
 <!--    </view>-->
+    <view>
+        东东好帅
         <view bindtap="setTitle">
             <text>{{title}}</text>
         </view>
+    </view>
+    <view bindtap="clickA" capture-bind:tap="captureA">
+        clickA
+        <view bindtap="clickB" capture-catch:tap="captureB">
+            clickB
+            <view bindtap="clickC" capture-catch:tab="captureC">
+                clickC
+            </view>
+        </view>
+    </view>
+    <view bindtap="clickA">
+        catchA
+        <view bindtap="clickB">
+            catchB
+            <view catchtap="clickC">
+                catchC
+            </view>
+        </view>
+    </view>
+    <navigator open-type="navigateBack">返回</navigator>
 </view>

@@ -1,0 +1,4 @@
+/* pages/wxs/wxs.wxss */
+page{
+  background-color: #f5f5f5;
+}

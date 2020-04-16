@@ -1,6 +1,7 @@
 //app.js
 App({
   onLaunch: function () {
+    console.log('wx.env', wx.env)
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -35,6 +36,12 @@ App({
   },
   onShow() {
     // console.log('currentPage', this.getCurrentPage())
+  },
+  onHide() {
+
+  },
+  onError() {
+
   },
   globalData: {
     userInfo: null

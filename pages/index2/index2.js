@@ -28,8 +28,25 @@ Page({
   onError() {
     console.log("东东真的太帅了onError")
   },
-  setTitle: function () {
-    console.log('设置title')
-    console.log('getCurrentPage', App.getCurrentPage)
-  }
+  setTitle: function (e) {
+    console.log('设置title', e)
+  },
+  clickA() {
+    console.log('CLickA')
+  },
+  clickB() {
+    console.log('CLickB')
+  },
+  clickC() {
+    console.log('CLickC')
+  },
+  captureA() {
+    console.log('captureA')
+  },
+  captureB() {
+    console.log('captureB')
+  },
+  captureC() {
+    console.log('captureC')
+  },
 })

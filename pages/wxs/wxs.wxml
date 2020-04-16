@@ -1,0 +1,10 @@
+<!--pages/wxs/wxs.wxml-->
+<text>东东好帅啊</text>
+<wxs module="m1">
+    module.exports = {
+      message: 'wxs.wxml'
+    }
+</wxs>
+<view>{{m1.message}}</view>
+<wxs src="./m2.wxs" module="m2"></wxs>
+<view>{{m2.message}}</view>
