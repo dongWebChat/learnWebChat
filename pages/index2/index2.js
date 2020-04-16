@@ -34,10 +34,13 @@ Page({
   clickA() {
     console.log('CLickA')
   },
-  clickB() {
+  clickB(e) {
+    e.currentTarget.dataset.id='E'
+    console.log('CLickB', e)
     console.log('CLickB')
   },
-  clickC() {
+  clickC(e) {
+    console.log('C',e)
     console.log('CLickC')
   },
   captureA() {
@@ -46,7 +49,8 @@ Page({
   captureB() {
     console.log('captureB')
   },
-  captureC() {
+  captureC(e) {
+    console.log(e)
     console.log('captureC')
   },
 })

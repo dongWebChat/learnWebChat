@@ -11,9 +11,9 @@
     </view>
     <view bindtap="clickA" capture-bind:tap="captureA">
         clickA
-        <view bindtap="clickB" capture-catch:tap="captureB">
+        <view bindtap="clickB" data-id="B" capture-bind:tap="captureB">
             clickB
-            <view bindtap="clickC" capture-catch:tab="captureC">
+            <view bindtap="clickC" data-id="C" capture-bind:tab="captureC">
                 clickC
             </view>
         </view>
@@ -22,7 +22,7 @@
         catchA
         <view bindtap="clickB">
             catchB
-            <view catchtap="clickC">
+            <view data-id="dong" catchtap="clickC">
                 catchC
             </view>
         </view>
